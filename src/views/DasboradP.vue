@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 import NavDas from '@/components/NavDas.vue';
