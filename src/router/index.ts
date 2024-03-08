@@ -1,13 +1,30 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
+
+import DasboradP from '@/views/DasboradP.vue'
+import LoginDas from '@/views/LoginDas.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
+      name: 'login',
+      component: LoginDas
+    },
+    {
+      path: '/home',
       name: 'home',
-      component: HomeView
+      component: DasboradP,
+      // children: [
+      //   {
+      //     path: 'users',
+      //     component: PageAdmin
+      //   },
+      //   {
+      //     path: 'settings',
+      //     component: PageSettings
+      //   }
+      // ]
     },
     {
       path: '/about',
